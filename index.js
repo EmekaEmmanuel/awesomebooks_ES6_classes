@@ -1,8 +1,10 @@
-import {AwesomeLibrary} from "./modules/awesomeLibrary.js";
-import {form, tabBtns, operationsContents} from './modules/usableData.js';
+import { AwesomeLibrary } from "./modules/awesomeLibrary.js";
+import { form, tabBtns, operationsContents } from './modules/usableData.js';
+import { LuxonTime } from "./modules/luxon.js";
+
 const newLibrary = new AwesomeLibrary();
 
-const displayTabSection = (selectedTab)=>{
+const displayTabSection = (selectedTab) => {
     let clickedContent = document.querySelector(`.tab_content_${selectedTab.dataset.tab}`)
     operationsContents.forEach(operationsContent => {
         if (clickedContent !== operationsContent) {
@@ -12,7 +14,7 @@ const displayTabSection = (selectedTab)=>{
         clickedContent.classList.add('active');
         clickedContent.classList.remove('hide');
     })
-} 
+}
 
 const clearInputFields = (title, author) => {
     title.value = '';
@@ -20,16 +22,14 @@ const clearInputFields = (title, author) => {
 }
 
 tabBtns.forEach(tabBtn => {
-    tabBtn.addEventListener('click', ()=>{
+    tabBtn.addEventListener('click', () => {
         displayTabSection(tabBtn)
     })
 })
 
 window.addEventListener('load', () => {
     newLibrary.displayBooks();
-    const date = new Date();
-    const clock = document.querySelector('.date_time');
-    clock.innerHTML = date;
+    LuxonTime.displayTime()
 });
 
 form.addEventListener('submit', (e) => {

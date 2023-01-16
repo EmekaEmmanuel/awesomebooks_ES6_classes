@@ -20,7 +20,7 @@
         <ul class="tab_container">
             <li data-tab="1" class="operations_tab list_tab ">List</li>
             <li data-tab="2" class="operations_tab add_tab">Add new </li>
-            <li  data-tab="3" class="operations_tab contact_tab">Contact</a></li>
+            <li data-tab="3" class="operations_tab contact_tab">Contact</a></li>
         </ul>
     </nav>
     <div id="date">
@@ -30,11 +30,11 @@
     <!--  -->
 
     <section class="operations_content tab_content_1 active">
-      <header>
-          <h1>All Awesome Books</h1>
-      </header>
-      <div class="empty_bookstore"></div>
-      <table class="table">
+        <header>
+            <h1>All Awesome Books</h1>
+        </header>
+        <div class="empty_bookstore"></div>
+        <table class="table">
             <tbody class="table_body">
             </tbody>
         </table>
@@ -43,16 +43,17 @@
     <!--  -->
 
     <section class="operations_content tab_content_2 hide">
-       <form class="book_form">
-          <h2>Add a new book</h2>
-          <fieldset class="form_data">
-             <input type="text" id="title" name="title" placeholder="Title" value="" class="title_input" required>
-             <input type="text" id="author" name="author" placeholder="Author" value="" class="author_input" required>
-          </fieldset>
-          <fieldset class="form_action">
-             <button class="add_btn" type="submit" id="add">Add</button>
-          </fieldset>
-       </form>
+        <form class="book_form">
+            <h2>Add a new book</h2>
+            <fieldset class="form_data">
+                <input type="text" id="title" name="title" placeholder="Title" value="" class="title_input" required>
+                <input type="text" id="author" name="author" placeholder="Author" value="" class="author_input"
+                    required>
+            </fieldset>
+            <fieldset class="form_action">
+                <button class="add_btn" type="submit" id="add">Add</button>
+            </fieldset>
+        </form>
     </section>
 
 
@@ -77,16 +78,8 @@
     </footer>
 
 </body>
+
 <script type="module" src="./index.js"></script>
 <script src="https://moment.github.io/luxon/global/luxon.js"></script>
-<!-- var DateTime = luxon.DateTime; -->
-<!-- .setLocale(navigator.language)
-      .toLocaleString({
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: 'false',
-      }); -->
+
 </html>
