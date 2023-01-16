@@ -29,15 +29,13 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
+- [📝 License](#license) 
 
 # 📖 [Awesome Books] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[Awesome Books]** is a project to create a web based library to store book details, load them from storage and remove them from the library. The project is built as a medium-fidelity wireframe using modules and ES6 syntax.
+This is a single-page application project to create a web based library that creates, stores and deletes book from the Awesome Library. The project is built as a medium-fidelity wireframe using modules and ES6 syntax.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,12 +56,15 @@
 
 ## Project Presentation <a name="project-presentation"></a>
 
-- [Project Presentation video link](https://www.loom.com/share/f1fe064892d2440194275e3733cf01f0) 
+- [Project Presentation video link](https://) 
 
 ### Key Features <a name="key-features"></a>
 
-- **[Tells you about me.]**
-- **[To display my past work experiences.]**
+- **[Tells you about about the library.]**
+- **[To display list of books in the library.]**
+- **[To add and delete books to the library.]**
+- **[Single Page application.]**
+- **[ Get the current date and time using online Luxon Library.]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
