@@ -1,17 +1,21 @@
-import { clock } from "./usableData.js";
+import { clock } from './usableData.js';
 
-class LuxonTime {
+const timeDetails = {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  hour12: 'false',
+};
+
+/* eslint-disable */
+
+export default class LuxonTime {
     static displayTime() {
-        const now = luxon.DateTime.now().setLocale(navigator.language).toLocaleString({
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric',
-            hour: 'numeric',
-            minute: 'numeric',
-            hour12: 'false',
-        });
+        const now = luxon.DateTime.now().setLocale(navigator.language).toLocaleString(timeDetails);
         clock.innerHTML = now;
     }
 }
 
-export { LuxonTime };
+/* eslint-disable */
